@@ -36,3 +36,7 @@ strong, em {
   height: 300px;
   position: relative;
 }
+
+ul li:nth-child(odd) {
+  background-color: #212D40;
+}
