@@ -1,15 +1,19 @@
+body {
+  background-color: #11151C;
+  color: #88A2AA;
+  padding: 3%;
+}
+
 .meu-nome {
   font-family: sans-serif;
   text-align: center;
 }
 
-body {
-  background-color: #11151C;
-  color: #88A2AA;
-}
-
-p {
+.descricao {
   font-family: monospace;
+  position: absolute;
+  top: 36%;
+  right: 8%;
 }
 
 strong, em {
@@ -30,8 +34,5 @@ strong, em {
 
 .image-container {
   height: 300px;
-}
-
-div {
-  border: 2px solid green;
+  position: relative;
 }
