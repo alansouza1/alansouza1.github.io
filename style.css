@@ -18,3 +18,12 @@ strong, em {
 .list {
   font-size: 18px;
 }
+
+#minha-foto {
+  float: left;
+  height: 300px;
+}
+
+.image-container {
+  height: 300px;
+}
