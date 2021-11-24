@@ -1,10 +1,11 @@
+.meu-nome {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 body {
   background-color: #11151C;
   color: #88A2AA;
-}
-
-h1 {
-  font-family: sans-serif;
 }
 
 p {
