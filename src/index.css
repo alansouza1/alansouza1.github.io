@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+/* --- Theme Configuration --- */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #10b981;
+  --color-brand-secondary: #3b82f6;
+  
+  /* Custom Animations */
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(-5%); }
+    50% { transform: translateY(0); }
+  }
+}
+
+/* --- Base Styles --- */
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-bold;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* --- Components & Utilities --- */
+@layer components {
+  /* Glass Morphism Card - Recipe 7 inspired */
+  .glass-card {
+    @apply bg-zinc-900/40 border border-zinc-800/50 backdrop-blur-md rounded-2xl transition-all duration-300;
+    box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-card:hover {
+    @apply border-emerald-500/30 bg-zinc-900/60;
+    box-shadow: 0 8px 32px -1px rgba(16, 185, 129, 0.1);
+  }
+
+  /* Gradient Text Utility */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-emerald-500 to-blue-500;
+  }
+
+  /* Animated Background Glow - Recipe 7 inspired */
+  .atmosphere-glow {
+    @apply absolute -z-10 blur-[120px] opacity-20 pointer-events-none;
+    background: radial-gradient(circle at center, var(--color-brand-primary), transparent 70%);
+  }
+}
+
+/* --- Custom Animations --- */
+.animate-bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite;
+}
+
