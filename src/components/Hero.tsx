@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, Code2, Github } from 'lucide-react';
 import { type GithubProfile } from '../services/github';
+import { CONTACT_EMAIL } from '../constants';
 
 export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
   return (
@@ -40,7 +41,7 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
               View Projects
             </a>
             <a 
-              href="mailto:alansouza4001@gmail.com" 
+              href={`mailto:${CONTACT_EMAIL}`} 
               className="px-8 py-4 bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-100 font-bold rounded-xl transition-all flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Github, Linkedin } from 'lucide-react';
+import { CONTACT_EMAIL, GITHUB_USERNAME, LINKEDIN_URL } from '../constants';
 
 export const Contact = () => {
   return (
@@ -15,7 +16,7 @@ export const Contact = () => {
         
         <div className="flex flex-wrap justify-center gap-6">
           <a 
-            href="mailto:alansouza4001@gmail.com" 
+            href={`mailto:${CONTACT_EMAIL}`} 
             className="group flex items-center gap-3 px-8 py-4 bg-zinc-100 text-zinc-950 font-bold rounded-2xl hover:bg-white transition-all hover:scale-105"
           >
             <Mail className="w-5 h-5" />
@@ -29,10 +30,10 @@ export const Contact = () => {
           </a>
           
           <div className="flex items-center gap-4">
-            <a href="https://github.com/alansouza1" target="_blank" rel="noreferrer" className="p-4 glass-card hover:border-emerald-500/50 transition-all">
+            <a href={`https://github.com/${GITHUB_USERNAME}`} target="_blank" rel="noreferrer" className="p-4 glass-card hover:border-emerald-500/50 transition-all">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/alansouza1/" target="_blank" rel="noreferrer" className="p-4 glass-card hover:border-blue-500/50 transition-all">
+            <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="p-4 glass-card hover:border-blue-500/50 transition-all">
               <Linkedin className="w-6 h-6" />
             </a>
           </div>
