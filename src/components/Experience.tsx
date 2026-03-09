@@ -5,7 +5,7 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-24 bg-zinc-900/30">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Professional Journey</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Experience</h2>
         
         <div className="max-w-3xl mx-auto space-y-8">
           {EXPERIENCE.map((exp, index) => (
