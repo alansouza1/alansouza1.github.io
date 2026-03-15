@@ -54,6 +54,33 @@ A modern, professional developer portfolio built with React 19, Vite 6, and Tail
    npm run build
    ```
 
+## 🐳 Docker Support
+
+You can also run this project using Docker and Docker Compose.
+
+### Development (with Hot Reload)
+
+1. Start the development container:
+   ```bash
+   docker compose up
+   ```
+
+2. Access the app at `http://localhost:3000`.
+
+### Production Build
+
+1. Build the production image:
+   ```bash
+   docker build --target production -t alansouza-portfolio .
+   ```
+
+2. Run the production container:
+   ```bash
+   docker run -p 8080:80 alansouza-portfolio
+   ```
+
+3. Access the app at `http://localhost:8080`.
+
 ## 📜 Scripts
 
 - `npm run dev`: Start the development server at `http://localhost:3000`.
