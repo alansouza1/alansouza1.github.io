@@ -7,15 +7,15 @@ export const LINKEDIN_URL = 'https://www.linkedin.com/in/alansouza1/';
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    skills: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL"]
+    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL"]
   },
   {
     title: "Tools & DevOps",
-    skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD"]
+    skills: ["Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
   }
 ];
 
@@ -25,7 +25,7 @@ export const EXPERIENCE = [
     role: "Computer Science Student",
     period: "2026 - Present",
     description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
-    skills: ["C", "C#", "Java", "Python", "AI"]
+    skills: ["C", "C++", "Java", "Python", "AI"]
   },
   {
     company: "Full Stack Developer Course at Trybe",
