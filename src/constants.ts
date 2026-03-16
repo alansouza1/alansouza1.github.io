@@ -15,7 +15,7 @@ export const SKILL_CATEGORIES = [
   },
   {
     title: "Tools & DevOps",
-    skills: ["Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
+    skills: ["Artificial Intelligence", "Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
   }
 ];
 
