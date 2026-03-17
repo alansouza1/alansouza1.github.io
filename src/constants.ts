@@ -11,7 +11,7 @@ export const SKILL_CATEGORIES = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL"]
+    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
   },
   {
     title: "Tools & DevOps",
