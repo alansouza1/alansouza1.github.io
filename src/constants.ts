@@ -13,38 +13,31 @@ export const HERO_TITLE = {
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    skills: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"]
+    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
   },
   {
     title: "Tools & DevOps",
-    skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD"]
+    skills: ["Artificial Intelligence", "Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
   }
 ];
 
 export const EXPERIENCE = [
   {
-    company: "Freelance Developer",
-    role: "Full Stack Engineer",
-    period: "2022 - Present",
-    description: "Developing custom solutions for small to medium enterprises, focusing on React, Node.js, and Cloud infrastructure.",
-    skills: ["React", "Next.js", "TypeScript", "AWS"]
+    company: "Impacta Technology College",
+    role: "Computer Science Student",
+    period: "2026 - Present",
+    description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
+    skills: ["C", "C++", "Java", "Python", "AI"]
   },
   {
-    company: "Tech Solutions Inc.",
-    role: "Frontend Developer",
-    period: "2020 - 2022",
-    description: "Led the frontend team in rebuilding the core product dashboard, improving performance by 40%.",
-    skills: ["Vue.js", "Tailwind CSS", "JavaScript", "Jest"]
-  },
-  {
-    company: "Digital Agency",
-    role: "Junior Web Developer",
-    period: "2019 - 2020",
-    description: "Maintained and updated client websites, ensuring responsive design and cross-browser compatibility.",
-    skills: ["HTML/CSS", "PHP", "WordPress", "jQuery"]
+    company: "Full Stack Developer Course at Trybe",
+    role: "Student",
+    period: "2021 - 2023",
+    description: "More than 1,500 hours of classes focusing on: Software development, front-end, back-end, computer science, software engineering, agile methodologies and soft skills.",
+    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Jest", "SQL"]
   }
 ];
