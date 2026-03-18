@@ -4,6 +4,12 @@ export const CONTACT_EMAIL = 'alansouza4001@gmail.com';
 
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/alansouza1/';
 
+export const HERO_TITLE = {
+  prefix: "Turning complex",
+  highlight: "problems",
+  suffix: "into simple, functional code."
+};
+
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
@@ -21,7 +27,7 @@ export const SKILL_CATEGORIES = [
 
 export const EXPERIENCE = [
   {
-    company: "Impact Technology College",
+    company: "Impacta Technology College",
     role: "Computer Science Student",
     period: "2026 - Present",
     description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",

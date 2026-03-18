@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, Code2, Github } from 'lucide-react';
 import { type GithubProfile } from '../services/github';
-import { CONTACT_EMAIL } from '../constants';
+import { CONTACT_EMAIL, HERO_TITLE } from '../constants';
 
 export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
   return (
@@ -25,8 +25,8 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
-            Building digital <br />
-            <span className="gradient-text">experiences</span> that matter.
+            {HERO_TITLE.prefix} <br />
+            <span className="gradient-text">{HERO_TITLE.highlight}</span> {HERO_TITLE.suffix}
           </h1>
           
           <p className="text-zinc-400 text-lg mb-8 max-w-lg leading-relaxed">
