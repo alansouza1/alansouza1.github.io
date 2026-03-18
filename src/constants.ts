@@ -4,34 +4,47 @@ export const CONTACT_EMAIL = 'alansouza4001@gmail.com';
 
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/alansouza1/';
 
+export const HERO_TITLE = {
+  prefix: "Turning complex",
+  highlight: "problems",
+  suffix: "into simple, functional code."
+};
+
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Framer Motion"]
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Backend",
-    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
+    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "GraphQL"]
   },
   {
     title: "Tools & DevOps",
-    skills: ["Artificial Intelligence", "Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
+    skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD"]
   }
 ];
 
 export const EXPERIENCE = [
   {
-    company: "Impact Technology College",
-    role: "Computer Science Student",
-    period: "2026 - Present",
-    description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
-    skills: ["C", "C++", "Java", "Python", "AI"]
+    company: "Freelance Developer",
+    role: "Full Stack Engineer",
+    period: "2022 - Present",
+    description: "Developing custom solutions for small to medium enterprises, focusing on React, Node.js, and Cloud infrastructure.",
+    skills: ["React", "Next.js", "TypeScript", "AWS"]
   },
   {
-    company: "Full Stack Developer Course at Trybe",
-    role: "Student",
-    period: "2021 - 2023",
-    description: "More than 1,500 hours of classes focusing on: Software development, front-end, back-end, computer science, software engineering, agile methodologies and soft skills.",
-    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Jest", "SQL"]
+    company: "Tech Solutions Inc.",
+    role: "Frontend Developer",
+    period: "2020 - 2022",
+    description: "Led the frontend team in rebuilding the core product dashboard, improving performance by 40%.",
+    skills: ["Vue.js", "Tailwind CSS", "JavaScript", "Jest"]
+  },
+  {
+    company: "Digital Agency",
+    role: "Junior Web Developer",
+    period: "2019 - 2020",
+    description: "Maintained and updated client websites, ensuring responsive design and cross-browser compatibility.",
+    skills: ["HTML/CSS", "PHP", "WordPress", "jQuery"]
   }
 ];
