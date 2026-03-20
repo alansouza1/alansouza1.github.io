@@ -27,7 +27,7 @@ export const SKILL_CATEGORIES = [
 
 export const EXPERIENCE = [
   {
-    company: "Impacta Technology College",
+    company: "FIAP",
     role: "Computer Science Student",
     period: "2026 - Present",
     description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
