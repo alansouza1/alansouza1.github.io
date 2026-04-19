@@ -13,11 +13,11 @@ export const HERO_TITLE = {
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "JavaScript", "Tailwind CSS", "Framer Motion"]
+    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Next.js", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Backend",
-    skills: ["Node.js", "TypeScript", "Java", "C", "C++", "C#", "Python", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
+    skills: ["TypeScript", "Java", "C", "C++", "C#", "Python", "Node.js", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
   },
   {
     title: "Tools & DevOps",
