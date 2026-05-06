@@ -13,11 +13,11 @@ export const HERO_TITLE = {
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Next.js", "Tailwind CSS", "Framer Motion"]
+    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue.js", "Next.js", "Redux", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Backend",
-    skills: ["TypeScript", "Java", "C", "C++", "C#", "Python", "Node.js", "Express", "MySQL", "MongoDB", "GraphQL", "Swagger"]
+    skills: ["TypeScript", "Java", "C", "C++", "C#", "Python", "Node.js", "Express", "Spring Boot", "ASP.NET", "Django", "MySQL", "MongoDB", "GraphQL", "Swagger"]
   },
   {
     title: "Tools & DevOps",
@@ -31,7 +31,7 @@ export const EXPERIENCE = [
     role: "Computer Science Student",
     period: "2026 - Present",
     description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
-    skills: ["C", "C++", "Java", "Python", "AI"]
+    skills: ["C", "C++", "JavaScript", "Python", "AI"]
   },
   {
     company: "Full Stack Developer Course at Trybe",
