@@ -1,16 +1,17 @@
 # Alan Souza Portfolio
 
-A modern, professional developer portfolio built with React 19, Vite 6, and Tailwind CSS 4. This project showcases my GitHub repositories, technical skills, and professional experience with a focus on high-performance and aesthetic appeal.
+A modern, professional developer portfolio built with React 19, Vite 6, and Tailwind CSS 4. This project showcases my GitHub repositories, technical skills, and professional experience as a Computer Science student at FIAP and Software Development Intern at WAE Tecnologia.
 
 ## 🚀 Features
 
 - **GitHub Integration**: Automatically fetches and displays real-time profile data and projects using the GitHub API.
+- **Bilingual Support**: Full English and Portuguese (PT-BR) support with automatic browser language detection and manual toggle.
 - **Modern UI**: High-contrast dark theme with a clean, professional aesthetic.
 - **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
 - **Dynamic Projects**: Showcases public GitHub repositories, filtering out the profile README.
 - **Smooth Animations**: Interactive elements enhanced with Framer Motion (Motion).
-- **Categorized Skills**: Clear visualization of technical expertise across Frontend, Backend, and Tools.
-- **Professional Experience**: Detailed timeline of educational and professional background.
+- **Categorized Skills**: Clear visualization of technical skills across Frontend, Backend, and Tools.
+- **Professional Experience & Education**: Separate sections for work experience and academic background.
 
 ## 🛠️ Tech Stack
 
