@@ -13,31 +13,44 @@ export const HERO_TITLE = {
 export const SKILL_CATEGORIES = [
   {
     title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue.js", "Next.js", "Redux", "Tailwind CSS", "Framer Motion"]
+    skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Next.js", "Redux", "Tailwind CSS", "Vite"]
   },
   {
     title: "Backend",
-    skills: ["TypeScript", "Java", "C", "C++", "C#", "Python", "Node.js", "Express", "Spring Boot", "ASP.NET", "Django", "MySQL", "MongoDB", "GraphQL", "Swagger"]
+    skills: ["Java", "Spring Boot", "Python", "Django", "C#", ".NET", "Node.js", "Express", "SQL", "MySQL", "PostgreSQL", "MongoDB", "REST APIs", "Swagger / OpenAPI"]
   },
   {
     title: "Tools & DevOps",
-    skills: ["Artificial Intelligence", "Linux", "Git", "Docker", "AWS", "Vercel", "CI/CD"]
+    skills: ["Git", "GitHub", "Docker", "Linux", "Vercel", "CI/CD", "Artificial Intelligence"]
   }
 ];
 
-export const EXPERIENCE = [
+export const PROFESSIONAL_EXPERIENCE = [
   {
-    company: "FIAP",
-    role: "Computer Science Student",
+    company: "WAE Tecnologia",
+    roleKey: "experience.wae",
     period: "2026 - Present",
-    description: "Focus on Software Engineering, AI, Data Science, Advanced Algorithms, and Security.",
-    skills: ["C", "C++", "JavaScript", "Python", "AI"]
+    skills: ["GeneXus", "APIs", "Databases", "Software Development", "Testing"]
   },
   {
-    company: "Full Stack Developer Course at Trybe",
-    role: "Student",
+    company: "Synplai",
+    roleKey: "experience.synplai",
+    period: "2026",
+    skills: ["Python", "Django", "Bug Fixing", "Software Maintenance", "Code Refactoring"]
+  }
+];
+
+export const EDUCATION = [
+  {
+    institution: "FIAP",
+    roleKey: "education.fiap",
+    period: "2026 - Present",
+    skills: ["Software Engineering", "AI", "Data Science", "Algorithms", "Cybersecurity"]
+  },
+  {
+    institution: "Trybe",
+    roleKey: "education.trybe",
     period: "2021 - 2023",
-    description: "More than 1,500 hours of classes focusing on: Software development, front-end, back-end, computer science, software engineering, agile methodologies and soft skills.",
     skills: ["React", "Next.js", "TypeScript", "JavaScript", "Jest", "SQL"]
   }
 ];
