@@ -1,16 +1,19 @@
 import { motion } from 'motion/react';
 import { Code2, Github, ExternalLink } from 'lucide-react';
 import { type GithubRepo } from '../services/github';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const Projects = ({ repos }: { repos: GithubRepo[] }) => {
+  const { t } = useLanguage();
+
   return (
     <section id="projects" className="py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('projects.title')}</h2>
             <p className="text-zinc-400 max-w-md">
-              A collection of my recent work, ranging from web applications to open-source tools.
+              {t('projects.subtitle')}
             </p>
           </div>
           <a 
@@ -19,7 +22,7 @@ export const Projects = ({ repos }: { repos: GithubRepo[] }) => {
             rel="noreferrer"
             className="hidden md:flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
           >
-            See all on GitHub <ExternalLink className="w-4 h-4" />
+            {t('projects.seeAll')} <ExternalLink className="w-4 h-4" />
           </a>
         </div>
 
@@ -50,7 +53,7 @@ export const Projects = ({ repos }: { repos: GithubRepo[] }) => {
               </h3>
               
               <p className="text-zinc-400 text-sm mb-6 flex-grow line-clamp-3">
-                {repo.description || "No description provided for this repository."}
+                {repo.description || t('projects.noDescription')}
               </p>
               
               <div className="flex flex-wrap gap-2 mt-auto">

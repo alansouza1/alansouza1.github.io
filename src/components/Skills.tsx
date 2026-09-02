@@ -1,11 +1,14 @@
 import { motion } from 'motion/react';
 import { SKILL_CATEGORIES } from '../constants';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const Skills = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="skills" className="py-24 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Technical Arsenal</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">{t('skills.title')}</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {SKILL_CATEGORIES.map((category, idx) => (
             <motion.div
