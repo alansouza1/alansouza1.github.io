@@ -2,8 +2,11 @@ import { motion } from 'motion/react';
 import { Mail, Code2, Github } from 'lucide-react';
 import { type GithubProfile } from '../services/github';
 import { CONTACT_EMAIL, HERO_TITLE } from '../constants';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
+  const { t } = useLanguage();
+
   return (
     <section id="about" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background elements */}
@@ -21,16 +24,20 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            Available for new projects
+            {t('hero.badge')}
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-[1.1]">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-[1.1]">
             {HERO_TITLE.prefix} <br />
             <span className="gradient-text">{HERO_TITLE.highlight}</span> {HERO_TITLE.suffix}
           </h1>
+
+          <p className="text-zinc-500 text-sm font-medium mb-6 tracking-wide">
+            {t('hero.subtitle')}
+          </p>
           
           <p className="text-zinc-400 text-lg mb-8 max-w-lg leading-relaxed">
-            {profile?.bio || "Full-stack developer passionate about creating clean, efficient, and user-centric applications. Specializing in modern web technologies and cloud architecture."}
+            {profile?.bio || t('hero.fallbackBio')}
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -38,14 +45,14 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
               href="#projects" 
               className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold rounded-xl transition-all hover:scale-105 active:scale-95"
             >
-              View Projects
+              {t('hero.viewProjects')}
             </a>
             <a 
               href={`mailto:${CONTACT_EMAIL}`} 
               className="px-8 py-4 bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-100 font-bold rounded-xl transition-all flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />
-              Get in Touch
+              {t('hero.getInTouch')}
             </a>
           </div>
         </motion.div>
@@ -71,8 +78,8 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
               <Code2 className="w-6 h-6 text-emerald-500" />
             </div>
             <div>
-              <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Experience</div>
-              <div className="text-lg font-bold">4+ Years</div>
+              <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{t('hero.currentFocus')}</div>
+              <div className="text-lg font-bold">{t('hero.currentFocusValue')}</div>
             </div>
           </div>
           
@@ -81,7 +88,7 @@ export const Hero = ({ profile }: { profile: GithubProfile | null }) => {
               <Github className="w-6 h-6 text-blue-500" />
             </div>
             <div>
-              <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">Repos</div>
+              <div className="text-xs text-zinc-500 uppercase font-bold tracking-wider">{t('hero.repos')}</div>
               <div className="text-lg font-bold">{profile?.public_repos || 0}+</div>
             </div>
           </div>
